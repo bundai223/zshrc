@@ -28,6 +28,10 @@ fi
 
 export PATH
 
+# for ruby
+export PATH=$PATH:/usr/local/rbenv/bin
+eval "$(rbenv init -)"
+
 export XDG_CONFIG_HOME=~/.config
 
 # ctrl + sがterminalを停止させるのをなしに
