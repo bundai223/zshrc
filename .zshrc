@@ -105,9 +105,10 @@ setopt auto_pushd           # cd履歴を残す
 setopt pushd_ignore_dups    # 重複cd履歴は残さない
 setopt auto_cd              # path名だけでcd
 
+# plugin
 # ローカル用設定を読み込む
-if [ -f ${PERSONAL_ZSH_DIR}/.zshrc.antigen ]; then
-    source ${PERSONAL_ZSH_DIR}/.zshrc.antigen
+if [ -f ${PERSONAL_ZSH_DIR}/.zshrc.plugin ]; then
+    source ${PERSONAL_ZSH_DIR}/.zshrc.plugin
 fi
 
 # History setting {{{
