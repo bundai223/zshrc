@@ -17,6 +17,10 @@ else
     echo "Please access: https://github.com/settings/tokens and put token to $GITHUB_TOKEN_PATH."
 fi
 
+if [[ -s ~/repos/github.com/creationix/nvm/nvm.sh ]]; then
+  source ~/repos/github.com/creationix/nvm/nvm.sh
+fi
+
 # ローカル用設定を読み込む
 if [ -f ~/.zshenv_local ]; then
   source ~/.zshenv_local
