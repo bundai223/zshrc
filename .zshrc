@@ -93,8 +93,8 @@ zstyle ':completion:*:' ignore-parents parent pwd
 zstyle ':completion:*:*:cd:*' ignored-patterns '.svn|.git'
 zstyle ':completion:*:*files' ignored-patterns '*?.o' '*?.pyc' '*\~'
 # ls,rmはすべてを補完
-zstyle ':completion:*:ls:*' ignored-patterns 
-zstyle ':completion:*:rm:*' ignored-patterns 
+zstyle ':completion:*:ls:*' ignored-patterns
+zstyle ':completion:*:rm:*' ignored-patterns
 
 # }}}
 
@@ -118,7 +118,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 setopt appendhistory extendedglob notify
-setopt extended_history 
+setopt extended_history
 
 # 重複する履歴は保存しない
 setopt hist_ignore_dups
