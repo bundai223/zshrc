@@ -17,6 +17,27 @@ else
     echo "Please access: https://github.com/settings/tokens and put token to $GITHUB_TOKEN_PATH."
 fi
 
+if [[ -s ~/repos/github.com/creationix/nvm/nvm.sh ]]; then
+  source ~/repos/github.com/creationix/nvm/nvm.sh
+fi
+
+export RUST_SRC_PATH=~/repos/github.com/rust-lang/rust
+
+export ZSH_HISTORY_FILE="$HOME/.config/zsh/zsh_histroy.db"
+# peco などと組み合わせて検索するためのキーバインド
+# # そのディレクトリで使用したコマンドしか候補に出さないか、
+# # 今までの履歴を全部候補に出すか切り分けらる
+export ZSH_HISTORY_KEYBIND_GET_BY_DIR="^r"
+export ZSH_HISTORY_KEYBIND_GET_ALL="^r^a"
+
+# 専用のセレクタ I/F から SQL を実行する
+export ZSH_HISTORY_KEYBIND_SCREEN="^r^r"
+
+# substring 系のキーバインド
+# BUFFER (コマンドライン) に何もなければ通常の動作
+export ZSH_HISTORY_KEYBIND_ARROW_UP="^p"
+export ZSH_HISTORY_KEYBIND_ARROW_DOWN="^n"
+
 # ローカル用設定を読み込む
 if [ -f ~/.zshenv_local ]; then
   source ~/.zshenv_local

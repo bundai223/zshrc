@@ -33,27 +33,13 @@ export PATH
 export PATH=$PATH:/usr/local/rbenv/bin
 eval "$(rbenv init -)"
 
+export GEMSRC_USE_GHQ=true
+#
+
 export XDG_CONFIG_HOME=~/.config
 
 # ctrl + sがterminalを停止させるのをなしに
 stty stop undef
-
-export RUST_SRC_PATH=~/repos/github.com/rust-lang/rust
-
-export ZSH_HISTORY_FILE="$HOME/.config/zsh/zsh_histroy.db"
-# peco などと組み合わせて検索するためのキーバインド
-# # そのディレクトリで使用したコマンドしか候補に出さないか、
-# # 今までの履歴を全部候補に出すか切り分けらる
-export ZSH_HISTORY_KEYBIND_GET_BY_DIR="^r"
-export ZSH_HISTORY_KEYBIND_GET_ALL="^r^a"
-
-# 専用のセレクタ I/F から SQL を実行する
-export ZSH_HISTORY_KEYBIND_SCREEN="^r^r"
-
-# substring 系のキーバインド
-# BUFFER (コマンドライン) に何もなければ通常の動作
-export ZSH_HISTORY_KEYBIND_ARROW_UP="^p"
-export ZSH_HISTORY_KEYBIND_ARROW_DOWN="^n"
 
 if [ -e /var/www/rails/ai_q_env ]; then
   . /var/www/rails/ai_q_env
