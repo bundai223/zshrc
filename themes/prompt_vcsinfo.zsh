@@ -120,17 +120,11 @@ if is-at-least 4.3.11; then
       | wc -l \
       | tr -d ' ')
 
-    # TODO: 文字列を一行ごとに評価したいがうまいこと分割できてない
-    # とりあえずちょいとムダ目に分割して評価してる
-    local commitlist
-    commitlist=${(z)revlist}
-
     local ahead=0
-    for commit in ${commitlist}; do
-      if [[ "${commit}" == ">" ]]; then
-        ((ahead = ahead + 1))
-      fi
-    done
+    ahead=$(command echo ${revlist} \
+      | grep '>' \
+      | wc -l \
+      | tr -d ' ')
 
     local behind
     ((behind = ${diffCommit} - ${ahead}))
