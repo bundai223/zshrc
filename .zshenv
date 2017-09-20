@@ -43,3 +43,5 @@ if [ -f ~/.zshenv_local ]; then
   source ~/.zshenv_local
 fi
 
+# export NVIM_PYTHON_LOG_FILE=~/.config/nvim/nvim.log
+# export NVIM_PYTHON_LOG_LEVEL=INFO#DEBUG
