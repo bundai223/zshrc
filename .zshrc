@@ -103,7 +103,6 @@ setopt ignore_eof           # C-dでログアウトしない
 setopt no_auto_param_slash  # 自動で末尾に/を補完しない
 setopt auto_pushd           # cd履歴を残す
 setopt pushd_ignore_dups    # 重複cd履歴は残さない
-setopt auto_cd              # path名だけでcd
 
 # plugin
 # ローカル用設定を読み込む
@@ -383,7 +382,11 @@ precmd () {
 
 # }}}
 
+# 3秒以上かかる処理の後にtimeコマンドの結果を表示してくれる
 REPORTTIME=3
+
+# Ctrl+wでパス一段づつ削除
+WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
 # OPAM configuration
 . ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
