@@ -264,6 +264,10 @@ alias jrake="jruby -S rake"
 alias v="vagrant"
 alias v_restart="vagrant halt; vagrant up"
 
+if [[ -f ~/repos/github.com/dylanaraps/neofetch/neofetch ]]; then
+  alias neofetch='~/repos/github.com/dylanaraps/neofetch/neofetch'
+  ~/repos/github.com/dylanaraps/neofetch/neofetch
+fi
 ## man zshall
 # ref) http://qiita.com/yuyuchu3333/items/67630d597c7700a51b95
 # zman [search word]
