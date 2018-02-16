@@ -9,7 +9,7 @@ export EDITOR=nvim
 #export ANDROID_HOME=${TOOLS_PATH}/opt/android-sdk
 export JAVA_OPTS='-Dgroovy.source.encoding=UTF-8 -Dfile.encoding=UTF-8'
 
-PATH=/usr/bin:/bin:/usr/sbin:/sbin
+# PATH=/usr/bin:/bin:/usr/sbin:/sbin
 # for tools
 PATH=${TOOLS_PATH}/bin:$PATH
 PATH=${TOOLS_PATH}/go/bin:$PATH

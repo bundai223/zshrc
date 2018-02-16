@@ -7,7 +7,7 @@ fpath=(~/repos/github.com/zsh-users/zsh-completions/src(N-/) $fpath)
 fpath=(${PERSONAL_ZSH_DIR}/functions/completions(N-/) $fpath)
 #fpath=(/usr/local/share/zsh/site-functions(N-/) $fpath)
 
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin
+# export PATH=/usr/bin:/bin:/usr/sbin:/sbin
 path=(${PERSONAL_ZSH_DIR}/functions(N-/) $path)
 
 GITHUB_TOKEN_PATH=~/.config/git/github_token
