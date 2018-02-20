@@ -44,3 +44,5 @@ stty stop undef
 if [ -e /var/www/rails/ai_q_env ]; then
   . /var/www/rails/ai_q_env
 fi
+export NVIM_PYTHON_LOG_FILE=~/.config/nvim/log
+export NVIM_PYTHON_LOG_LEVEL=DEBUG

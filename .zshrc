@@ -266,7 +266,9 @@ alias v_restart="vagrant halt; vagrant up"
 
 if [[ -f ~/repos/github.com/dylanaraps/neofetch/neofetch ]]; then
   alias neofetch='~/repos/github.com/dylanaraps/neofetch/neofetch'
-  ~/repos/github.com/dylanaraps/neofetch/neofetch
+  if [ -z "$TMUX" ]; then
+    ~/repos/github.com/dylanaraps/neofetch/neofetch
+  fi
 fi
 ## man zshall
 # ref) http://qiita.com/yuyuchu3333/items/67630d597c7700a51b95
