@@ -9,20 +9,6 @@ export EDITOR=nvim
 # export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 export SHELL=${BREW_PATH}/bin/zsh
 
-# for android path setting
-export ANDROID_HOME=~/Library/Android/sdk
-export NDK_ROOT=${ANDROID_HOME}/ndk-bundle
-export GRADLE_HOME=${BREW_PATH}/opt/gradle
-export ECLIPSE_HOME=/Applications/eclipse
-export JAVA_OPTS='-Dgroovy.source.encoding=UTF-8 -Dfile.encoding=UTF-8'
-export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
-export JFX_DIR=${JAVA_HOME}/jre/lib/ext
-export GENYMOTION_APP_HOME='/Users/daiji/Applications/Genymotion.app'
-
-export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
-export RUST_SRC_PATH="/Users/daiji/repos/github.com/rust-lang/rust/src"
-
-
 # for homebrew
 PATH=$HOME/.nodebrew/current/bin:$PATH
 PATH=${BREW_PATH}/bin:$PATH
@@ -53,6 +39,21 @@ PATH="/Users/daiji/repos/github.com/bundai223/terminal-tools/bin:$PATH"
 #export CPPFLAGS=-I/usr/local/opt/qt5/include
 export PATH
 
+# for android path setting
+export ANDROID_HOME=~/Library/Android/sdk
+export NDK_ROOT=${ANDROID_HOME}/ndk-bundle
+export GRADLE_HOME=${BREW_PATH}/opt/gradle
+export ECLIPSE_HOME=/Applications/eclipse
+export JAVA_OPTS='-Dgroovy.source.encoding=UTF-8 -Dfile.encoding=UTF-8'
+export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
+export JFX_DIR=${JAVA_HOME}/jre/lib/ext
+export GENYMOTION_APP_HOME='/Users/daiji/Applications/Genymotion.app'
+
+export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
+# export RUST_SRC_PATH="/Users/daiji/repos/github.com/rust-lang/rust/src"
+export RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/src
+
+# Docker
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/daiji/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1

@@ -21,8 +21,6 @@ if [[ -s ~/repos/github.com/creationix/nvm/nvm.sh ]]; then
   source ~/repos/github.com/creationix/nvm/nvm.sh
 fi
 
-export RUST_SRC_PATH=~/repos/github.com/rust-lang/rust
-
 export ZSH_HISTORY_FILE="$HOME/.config/zsh/zsh_histroy.db"
 # peco などと組み合わせて検索するためのキーバインド
 # # そのディレクトリで使用したコマンドしか候補に出さないか、

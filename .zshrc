@@ -317,7 +317,7 @@ if [ -f ~/.zshrc_local ]; then
 fi
 
 # Load utility scripts. {{{
-utils_dir=~/.config/zsh/zsh-utils
+utils_dir=~/repos/github.com/bundai223/zsh-utils
 source $utils_dir/scripts/functions.zsh
 source_scripts_in_tree $utils_dir
 # }}}
