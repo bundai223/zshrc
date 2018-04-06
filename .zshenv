@@ -17,10 +17,6 @@ else
     echo "Please access: https://github.com/settings/tokens and put token to $GITHUB_TOKEN_PATH."
 fi
 
-if [[ -s ~/repos/github.com/creationix/nvm/nvm.sh ]]; then
-  source ~/repos/github.com/creationix/nvm/nvm.sh
-fi
-
 export ZSH_HISTORY_FILE="$HOME/.config/zsh/zsh_histroy.db"
 # peco などと組み合わせて検索するためのキーバインド
 # # そのディレクトリで使用したコマンドしか候補に出さないか、
