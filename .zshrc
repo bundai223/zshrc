@@ -213,13 +213,6 @@ zle -N do_enter
 bindkey '^m' do_enter
 # }}}
 
-# mkdir & cd newdir. {{{
-function mkcddir() {
-eval dirpath=$"$#"
-mkdir ${@} && cd $dirpath
-}
-# }}}
-
 # Alias {{{
 alias h='history'
 alias c='clear'
